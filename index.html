@@ -21,15 +21,19 @@ body {
 .container {
   max-width: 420px;
   margin: 0 auto;
-  padding: 36px 24px 90px;
+  padding: 48px 22px 80px; /* ↑ 顶部多留一点空间 */
+  position: relative;     /* ★ 关键 */
 }
 
-/* ===== 标题 ===== */
-.title {
-  text-align: center;
-  font-size: 14px;   /* 原16 → 14 */
-  letter-spacing: 1px;
-  margin-bottom: 32px;
+/* ===== 左上角小标题（资料角标） ===== */
+.corner-title {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-size: 10.5px;
+  letter-spacing: 2px; /* 字间距：冷感来源 */
+  color: #9a9a9a;
+  font-weight: 300;
 }
 
 /* ===== 顶部导航 ===== */
@@ -136,7 +140,7 @@ body {
 <body>
 <div class="container">
 
-<div class="title">- 郁谦止 虚恋资料 -</div>
+<div class="corner-title">// 郁谦止·虚恋须知</div>
 
 <div class="divider"></div>
 
