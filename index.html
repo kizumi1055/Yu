@@ -55,6 +55,14 @@ body {
   color: #111;
 }
 
+/* ===== 当前页（极弱高亮） ===== */
+.top-nav .current {
+  color: #7a7a7a;      /* 比默认灰深一点点 */
+  font-weight: 400;    /* 比整体 300 稍重 */
+  letter-spacing: 0.3px; /* 比其他项略紧 */
+  pointer-events: none;  /* 当前页不可点（可选） */
+}
+
 /* ===== 分割线 ===== */
 .divider {
   height: 1px;
@@ -142,14 +150,14 @@ body {
 
 <div class="corner-title">// 郁谦止·虚恋须知</div>
 
-<div class="divider"></div>
-
 <!-- 顶部导航 -->
 <div class="top-nav">
-  <a href="index.html">首页</a>
+  <a href="index.html" class="current">首页</a>
   <a href="huashu.html">话术</a>
   <a href="banping.html">板评</a>
 </div>
+
+<div class="divider"></div>
 
 <!-- 基础信息 -->
 
